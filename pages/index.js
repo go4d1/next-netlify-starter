@@ -16,7 +16,7 @@ export default function Home() {
           Get started by editing <code>pages/index.js</code>
         </p>
         <a href="/about.html">About</a>
-        <a href="/home.html">Home</a>
+        <a href="/patience.html">Home</a>
       </main>
 
       <Footer />
