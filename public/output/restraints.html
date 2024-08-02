@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Restraint Compliance Survey</title>
+    <link rel="stylesheet" href="/main.css" />
+    <style>
+      body {
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+      }
+      div p {
+        margin: 1em 0 0.6em;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/usecases.html">Use Cases</a></li>
+        <li><a href="/requirements.html">Requirements</a></li>
+        <li><a href="/examples.html">Examples</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li class="float-right">
+          <a href="restraintprompts.html">View the Build Methodology</a>
+        </li>
+      </ul>
+    </nav>
+    <h1>Patient Restraint Compliance Survey</h1>
+    <form action="/submit-survey" method="POST">
+      <input type="hidden" name="employee" value="" />
+
+      <div class="section">
+        <h2>General Understanding Processing the Data</h2>
+
+        <div class="question">
+          <p>
+            1. Are you aware of the definitions of physical and chemical
+            restraints according to the hospital policy and federal regulations?
+          </p>
+
+          <div class="options">
+            <label>
+              <input
+                type="radio"
+                name="Are_you_aware_of_the_definitions_of_physical_and_chemical_restraints_according_to_the_hospital_policy_and_federal_regulations?"
+                value="Yes"
+                data="correct"
+              />
+              Yes </label
+            ><br />
+
+            <label>
+              <input
+                type="radio"
+                name="Are_you_aware_of_the_definitions_of_physical_and_chemical_restraints_according_to_the_hospital_policy_and_federal_regulations?"
+                value="No"
+              />
+              No </label
+            ><br />
+          </div>
+
+          <p>
+            <em
+              >Follow-up: If No, please describe what you believe constitutes a
+              physical or chemical restraint.</em
+            >
+          </p>
+          <textarea
+            name="Are_you_aware_of_the_definitions_of_physical_and_chemical_restraints_according_to_the_hospital_policy_and_federal_regulations?_follow_up"
+            rows="4"
+            cols="50"
+          ></textarea>
+        </div>
+
+        <div class="question">
+          <p>
+            1. Can restraints be used for disciplinary purposes or staff
+            convenience?
+          </p>
+
+          <div class="options">
+            <label>
+              <input
+                type="radio"
+                name="Can_restraints_be_used_for_disciplinary_purposes_or_staff_convenience?"
+                value="Yes"
+                data="correct"
+              />
+              Yes </label
+            ><br />
+
+            <label>
+              <input
+                type="radio"
+                name="Can_restraints_be_used_for_disciplinary_purposes_or_staff_convenience?"
+                value="No"
+              />
+              No </label
+            ><br />
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Conditions for Use</h2>
+
+        <div class="question">
+          <p>
+            1. Under what conditions can restraints be used on a patient?
+            (Select all that apply)
+          </p>
+
+          <div class="options">
+            <label>
+              <input
+                type="checkbox"
+                name="Under_what_conditions_can_restraints_be_used_on_a_patient?_(Select_all_that_apply)"
+                value="To protect the patient from imminent harm"
+                data="correct"
+              />
+              To protect the patient from imminent harm </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="Under_what_conditions_can_restraints_be_used_on_a_patient?_(Select_all_that_apply)"
+                value="As a convenience for staff"
+              />
+              As a convenience for staff </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="Under_what_conditions_can_restraints_be_used_on_a_patient?_(Select_all_that_apply)"
+                value="When other less restrictive measures are ineffective"
+                data="correct"
+              />
+              When other less restrictive measures are ineffective </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="Under_what_conditions_can_restraints_be_used_on_a_patient?_(Select_all_that_apply)"
+                value="As a disciplinary action"
+              />
+              As a disciplinary action </label
+            ><br />
+          </div>
+        </div>
+
+        <div class="question">
+          <p>
+            1. Who is authorized to order the use of restraints in your
+            facility? (Select all that apply)
+          </p>
+
+          <div class="options">
+            <label>
+              <input
+                type="checkbox"
+                name="Who_is_authorized_to_order_the_use_of_restraints_in_your_facility?_(Select_all_that_apply)"
+                value="Physician"
+              />
+              Physician </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="Who_is_authorized_to_order_the_use_of_restraints_in_your_facility?_(Select_all_that_apply)"
+                value="Nurse Practitioner"
+              />
+              Nurse Practitioner </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="Who_is_authorized_to_order_the_use_of_restraints_in_your_facility?_(Select_all_that_apply)"
+                value="Any licensed practitioner permitted by state and facility regulations"
+              />
+              Any licensed practitioner permitted by state and facility
+              regulations </label
+            ><br />
+          </div>
+        </div>
+
+        <div class="question">
+          <p>
+            1. What steps must be taken before applying restraints? (Select all
+            that apply)
+          </p>
+
+          <div class="options">
+            <label>
+              <input
+                type="checkbox"
+                name="What_steps_must_be_taken_before_applying_restraints?_(Select_all_that_apply)"
+                value="Obtain an order from an authorized practitioner"
+              />
+              Obtain an order from an authorized practitioner </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="What_steps_must_be_taken_before_applying_restraints?_(Select_all_that_apply)"
+                value="Attempt less restrictive measures"
+              />
+              Attempt less restrictive measures </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="What_steps_must_be_taken_before_applying_restraints?_(Select_all_that_apply)"
+                value="Explain the reason for restraint to the patient if possible"
+              />
+              Explain the reason for restraint to the patient if possible </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="What_steps_must_be_taken_before_applying_restraints?_(Select_all_that_apply)"
+                value="Document the decision-making process"
+              />
+              Document the decision-making process </label
+            ><br />
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Duration and Monitoring</h2>
+
+        <div class="question">
+          <p>
+            1. Are you aware of the time limits for the use of restraints based
+            on the patient's age group?
+          </p>
+
+          <div class="options">
+            <label>
+              <input
+                type="radio"
+                name="Are_you_aware_of_the_time_limits_for_the_use_of_restraints_based_on_the_patient's_age_group?"
+                value="Yes"
+                data="correct"
+              />
+              Yes </label
+            ><br />
+
+            <label>
+              <input
+                type="radio"
+                name="Are_you_aware_of_the_time_limits_for_the_use_of_restraints_based_on_the_patient's_age_group?"
+                value="No"
+              />
+              No </label
+            ><br />
+          </div>
+
+          <p>
+            <em
+              >Follow-up: If Yes, please specify the maximum time limits for
+              each age group: Adults (18+), Adolescents (9-17), Children (Under
+              9)</em
+            >
+          </p>
+          <textarea
+            name="Are_you_aware_of_the_time_limits_for_the_use_of_restraints_based_on_the_patient's_age_group?_follow_up"
+            rows="4"
+            cols="50"
+          ></textarea>
+        </div>
+
+        <div class="question">
+          <p>
+            1. What must be monitored continuously when a patient is restrained?
+            (Select all that apply)
+          </p>
+
+          <div class="options">
+            <label>
+              <input
+                type="checkbox"
+                name="What_must_be_monitored_continuously_when_a_patient_is_restrained?_(Select_all_that_apply)"
+                value="Physical and psychological status"
+              />
+              Physical and psychological status </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="What_must_be_monitored_continuously_when_a_patient_is_restrained?_(Select_all_that_apply)"
+                value="Behavior"
+              />
+              Behavior </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="What_must_be_monitored_continuously_when_a_patient_is_restrained?_(Select_all_that_apply)"
+                value="Vital signs"
+              />
+              Vital signs </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="What_must_be_monitored_continuously_when_a_patient_is_restrained?_(Select_all_that_apply)"
+                value="Any signs of distress or discomfort"
+              />
+              Any signs of distress or discomfort </label
+            ><br />
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Documentation and Review</h2>
+
+        <div class="question">
+          <p>
+            1. Is it required to document each use of restraints, including the
+            reason, type, and duration?
+          </p>
+
+          <div class="options">
+            <label>
+              <input
+                type="radio"
+                name="Is_it_required_to_document_each_use_of_restraints,_including_the_reason,_type,_and_duration?"
+                value="Yes"
+                data="correct"
+              />
+              Yes </label
+            ><br />
+
+            <label>
+              <input
+                type="radio"
+                name="Is_it_required_to_document_each_use_of_restraints,_including_the_reason,_type,_and_duration?"
+                value="No"
+              />
+              No </label
+            ><br />
+          </div>
+        </div>
+
+        <div class="question">
+          <p>
+            1. How often must the need for continued use of restraints be
+            reviewed?
+          </p>
+
+          <div class="options">
+            <label>
+              <input
+                type="checkbox"
+                name="How_often_must_the_need_for_continued_use_of_restraints_be_reviewed?"
+                value="Every 30 minutes"
+              />
+              Every 30 minutes </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="How_often_must_the_need_for_continued_use_of_restraints_be_reviewed?"
+                value="Every hour"
+              />
+              Every hour </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="How_often_must_the_need_for_continued_use_of_restraints_be_reviewed?"
+                value="At least once per shift"
+              />
+              At least once per shift </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="How_often_must_the_need_for_continued_use_of_restraints_be_reviewed?"
+                value="Daily"
+              />
+              Daily </label
+            ><br />
+          </div>
+        </div>
+
+        <div class="question">
+          <p>
+            1. Have you received training on the proper use and documentation of
+            restraints?
+          </p>
+
+          <div class="options">
+            <label>
+              <input
+                type="radio"
+                name="Have_you_received_training_on_the_proper_use_and_documentation_of_restraints?"
+                value="Yes"
+                data="correct"
+              />
+              Yes </label
+            ><br />
+
+            <label>
+              <input
+                type="radio"
+                name="Have_you_received_training_on_the_proper_use_and_documentation_of_restraints?"
+                value="No"
+              />
+              No </label
+            ><br />
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Scenario-Based Questions</h2>
+
+        <div class="question">
+          <p>
+            1. A patient becomes increasingly agitated and threatens to harm
+            themselves. You are considering the use of restraints. What steps do
+            you take before applying restraints?
+          </p>
+
+          <div class="options">
+            <label>
+              <input
+                type="checkbox"
+                name="A_patient_becomes_increasingly_agitated_and_threatens_to_harm_themselves._You_are_considering_the_use_of_restraints._What_steps_do_you_take_before_applying_restraints?"
+                value="Contact the authorized practitioner"
+              />
+              Contact the authorized practitioner </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="A_patient_becomes_increasingly_agitated_and_threatens_to_harm_themselves._You_are_considering_the_use_of_restraints._What_steps_do_you_take_before_applying_restraints?"
+                value="Try verbal de-escalation techniques"
+              />
+              Try verbal de-escalation techniques </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="A_patient_becomes_increasingly_agitated_and_threatens_to_harm_themselves._You_are_considering_the_use_of_restraints._What_steps_do_you_take_before_applying_restraints?"
+                value="Document the patient's behavior"
+              />
+              Document the patient's behavior </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="A_patient_becomes_increasingly_agitated_and_threatens_to_harm_themselves._You_are_considering_the_use_of_restraints._What_steps_do_you_take_before_applying_restraints?"
+                value="None of the above"
+              />
+              None of the above </label
+            ><br />
+          </div>
+        </div>
+
+        <div class="question">
+          <p>
+            1. A patient under restraint shows signs of respiratory distress.
+            What is your immediate action?
+          </p>
+
+          <div class="options">
+            <label>
+              <input
+                type="checkbox"
+                name="A_patient_under_restraint_shows_signs_of_respiratory_distress._What_is_your_immediate_action?"
+                value="Continue monitoring the patient"
+              />
+              Continue monitoring the patient </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="A_patient_under_restraint_shows_signs_of_respiratory_distress._What_is_your_immediate_action?"
+                value="Immediately remove the restraint and provide necessary medical attention"
+              />
+              Immediately remove the restraint and provide necessary medical
+              attention </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="A_patient_under_restraint_shows_signs_of_respiratory_distress._What_is_your_immediate_action?"
+                value="Document the incident after completing your shift"
+              />
+              Document the incident after completing your shift </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="A_patient_under_restraint_shows_signs_of_respiratory_distress._What_is_your_immediate_action?"
+                value="Inform the patient's family first"
+              />
+              Inform the patient's family first </label
+            ><br />
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Knowledge Assessment and Compliance Reporting</h2>
+
+        <div class="question">
+          <p>
+            1. Are you familiar with the specific federal regulations (e.g., 42
+            CFR §482.13, §460.114, §483.358) that govern the use of restraints
+            in healthcare settings?
+          </p>
+
+          <div class="options">
+            <label>
+              <input
+                type="radio"
+                name="Are_you_familiar_with_the_specific_federal_regulations_(e.g.,_42_CFR_§482.13,_§460.114,_§483.358)_that_govern_the_use_of_restraints_in_healthcare_settings?"
+                value="Yes"
+                data="correct"
+              />
+              Yes </label
+            ><br />
+
+            <label>
+              <input
+                type="radio"
+                name="Are_you_familiar_with_the_specific_federal_regulations_(e.g.,_42_CFR_§482.13,_§460.114,_§483.358)_that_govern_the_use_of_restraints_in_healthcare_settings?"
+                value="No"
+              />
+              No </label
+            ><br />
+          </div>
+
+          <p>
+            <em
+              >Follow-up: If Yes, can you briefly describe the key principles
+              these regulations establish?</em
+            >
+          </p>
+          <textarea
+            name="Are_you_familiar_with_the_specific_federal_regulations_(e.g.,_42_CFR_§482.13,_§460.114,_§483.358)_that_govern_the_use_of_restraints_in_healthcare_settings?_follow_up"
+            rows="4"
+            cols="50"
+          ></textarea>
+        </div>
+
+        <div class="question">
+          <p>
+            1. Do you know the procedure for reporting and reviewing the use of
+            restraints within your facility?
+          </p>
+
+          <div class="options">
+            <label>
+              <input
+                type="radio"
+                name="Do_you_know_the_procedure_for_reporting_and_reviewing_the_use_of_restraints_within_your_facility?"
+                value="Yes"
+                data="correct"
+              />
+              Yes </label
+            ><br />
+
+            <label>
+              <input
+                type="radio"
+                name="Do_you_know_the_procedure_for_reporting_and_reviewing_the_use_of_restraints_within_your_facility?"
+                value="No"
+              />
+              No </label
+            ><br />
+          </div>
+
+          <p>
+            <em
+              >Follow-up: If Yes, please outline the steps involved in this
+              process.</em
+            >
+          </p>
+          <textarea
+            name="Do_you_know_the_procedure_for_reporting_and_reviewing_the_use_of_restraints_within_your_facility?_follow_up"
+            rows="4"
+            cols="50"
+          ></textarea>
+        </div>
+
+        <div class="question">
+          <p>
+            1. How effective do you find the current training on the use of
+            restraints?
+          </p>
+
+          <div class="options">
+            <label>
+              <input
+                type="checkbox"
+                name="How_effective_do_you_find_the_current_training_on_the_use_of_restraints?"
+                value="Very effective"
+              />
+              Very effective </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="How_effective_do_you_find_the_current_training_on_the_use_of_restraints?"
+                value="Somewhat effective"
+              />
+              Somewhat effective </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="How_effective_do_you_find_the_current_training_on_the_use_of_restraints?"
+                value="Neutral"
+              />
+              Neutral </label
+            ><br />
+
+            <label>
+              <input
+                type="checkbox"
+                name="How_effective_do_you_find_the_current_training_on_the_use_of_restraints?"
+                value="Ineffective"
+              />
+              Ineffective </label
+            ><br />
+          </div>
+
+          <p>
+            <em
+              >Follow-up: Please provide suggestions for improving training and
+              education on restraint use.</em
+            >
+          </p>
+          <textarea
+            name="How_effective_do_you_find_the_current_training_on_the_use_of_restraints?_follow_up"
+            rows="4"
+            cols="50"
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Final Comments and Suggestions</h2>
+
+        <div class="question">
+          <p>
+            1. Do you have any comments or suggestions regarding the use of
+            restraints, patient safety, or related policies in your facility?
+          </p>
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
